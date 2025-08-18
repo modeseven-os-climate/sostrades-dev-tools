@@ -17,7 +17,7 @@ FROM ${REGISTRY}/sostrades-api:${SOSTRADES_VERSION}
 # Copy models and platform repos for standalone image if needed
 COPY ./models ./models
 
-COPY ./platform/sostrades-webapi/sos_trades_api/git_commits_info.json ./platform/sostrades-webapi/sos_trades_api/git_commits_info.json
+# COPY ./platform/sostrades-webapi/sos_trades_api/git_commits_info.json ./platform/sostrades-webapi/sos_trades_api/git_commits_info.json
 
 COPY ./platform_requirements/api.requirements.txt api.requirements.txt
 RUN sed -i '/petsc\|kubernetes\|numpy[[:blank:]]*=/d' api.requirements.txt && \

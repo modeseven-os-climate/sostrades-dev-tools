@@ -77,8 +77,6 @@ COPY ./platform/sostrades-webapi ./platform/sostrades-webapi
 COPY ./platform/sostrades-core ./platform/sostrades-core
 COPY ./models ./models
 
-RUN if [ -e ./platform/sostrades-webapi/sos_trades_api/version.info ] ; then echo Version.info file provided ; else TZ="UTC" date > ./platform/sostrades-webapi/sos_trades_api/version.info ; fi
-
 # Update PYTHONPATH
 RUN ls -d ${SOS_TRADES_SOURCES}/platform/* | tr '\n' ':' > /tmp/pythonpath.txt && \ 
     ls -d ${SOS_TRADES_SOURCES}/models/* | tr '\n' ':' >> /tmp/pythonpath.txt && \ 
