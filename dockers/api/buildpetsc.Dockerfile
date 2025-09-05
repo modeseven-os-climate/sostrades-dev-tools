@@ -34,13 +34,10 @@ RUN python -m pip install --no-cache-dir --upgrade pip && \
     python -m uv pip install --no-cache-dir setuptools numpy==${NUMPY_VERSION}
 
 # PETSC version and directory
-ARG PETSC_VERSION="3.21.6"
+ARG PETSC_VERSION="3.23.6"
 ARG PETSC_BUILD_DIR="/petsc-build"
 ARG PETSC_INSTALL_DIR="/petsc-install"
 ENV PYTHON_SITE_PACKAGE_DIR="/usr/local/lib/python3.12/site-packages"
-
-# Fix petsc4py incompatibility with cython 3.1.0
-RUN pip install --no-cache-dir cython==3.0.12
 
 # Download and install PETSc
 RUN git clone --branch v${PETSC_VERSION} --depth 1 https://gitlab.com/petsc/petsc.git ${PETSC_BUILD_DIR} && \
