@@ -2,6 +2,23 @@
 
 The proper versioning and release of SoSTrades has started with the version 4.0.0.
 
+## Release v5.3.3
+Date: 2025-09-05
+
+### Features
+#### Build
+- Updated petsc (3.21.6 to 3.23.6)
+- Updated pyproject.tml for easier installation
+
+#### Code Quality
+- Added some python annotations and type hints
+
+#### Dashboard improvements
+- Dashboard improvements
+
+#### Documentation
+- Fixed ontology model documentation
+
 ## Release v5.3.2
 Date: 2025-08-04
 
