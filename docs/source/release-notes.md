@@ -3,7 +3,7 @@
 The proper versioning and release of SoSTrades has started with the version 4.0.0.
 
 ## Release v5.3.3
-Date: 2025-11-04
+Date: 2025-11-03
 
 ### Features
 #### Build
