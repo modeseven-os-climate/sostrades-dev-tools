@@ -3,7 +3,7 @@
 The proper versioning and release of SoSTrades has started with the version 4.0.0.
 
 ## Release v5.3.3
-Date: 2025-09-05
+Date: 2025-11-04
 
 ### Features
 #### Build
@@ -14,10 +14,21 @@ Date: 2025-09-05
 - Added some python annotations and type hints
 
 #### Dashboard improvements
-- Dashboard improvements
+- Display a data in dashboard
+- Load default process dashboard
 
-#### Documentation
-- Fixed ontology model documentation
+#### Core
+- Added plotly map chart in post-processing tools
+- Added a value decision module
+
+#### API V0
+- Added a user API key (in addition to group API key)
+
+### Bug fixes
+- Core: fixed display of the treeview with post-processing nodes
+- API/GUI: 
+  - fixed stand-alone import/export
+  - Fixed ontology model documentation
 
 ## Release v5.3.2
 Date: 2025-08-04
