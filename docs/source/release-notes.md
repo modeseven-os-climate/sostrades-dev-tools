@@ -25,8 +25,11 @@ Date: 2025-11-03
 - Added a user API key (in addition to group API key)
 
 ### Bug fixes
-- Core: fixed display of the treeview with post-processing nodes
-- API/GUI: 
+
+#### Core
+- fixed display of the treeview with post-processing nodes
+
+#### API/GUI 
   - fixed stand-alone import/export
   - Fixed ontology model documentation
 
