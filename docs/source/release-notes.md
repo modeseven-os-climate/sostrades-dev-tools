@@ -2,6 +2,20 @@
 
 The proper versioning and release of SoSTrades has started with the version 4.0.0.
 
+## Release v5.3.4
+Date: 2025-12-16
+
+### Features
+#### Core
+- Add parallel mono instance driver (DOE) feature: 
+  set the input parameter of the Eval node at Number of Processes (n_processes) > 1
+
+### Bug fixes
+
+#### Core
+- Fixed treeview build when coupling of coupling at root level.
+- fix sum value block discipline
+
 ## Release v5.3.3
 Date: 2025-11-03
 
